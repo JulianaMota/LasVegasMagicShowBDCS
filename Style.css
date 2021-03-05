@@ -1,0 +1,274 @@
+﻿body {
+    color: white;
+    margin: 0;
+    font-family: 'Lucida Sans Unicode';
+    background-color: black;
+}
+
+h1 {
+    font-family: 'CHICAGO moonshine demo';
+    text-align: center;
+    margin: 60px 0;
+}
+h2 {
+    font-family: 'CHICAGO moonshine demo';
+    margin-bottom: 30px;
+}
+.hide {
+    display: none;
+}
+
+/*******navigation*******/
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+    padding: 10px;
+    display: flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/*BUTTONS*/
+input[type=submit], .mytable a, input[type=button] {
+    border: 2px solid #29bda2;
+    background-color: transparent;
+    color: #29bda2;
+    font-family: 'Lucida Sans Unicode';
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+}
+#form1 .btn-nav {
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 0 10px 0 70vw;
+    background-color: #368080;
+   
+}
+#form1 .btn-nav:hover {
+    background-color: #fff;
+    color: #368080;
+}
+input[type=submit]:hover, .mytable a:hover, input[type=button]:hover {
+    border: 2px solid #aaeae8;
+    color: #aaeae8;
+}
+input[type=submit].btn-cancel {
+    border: 2px solid #a9a9a9;
+    color: #a9a9a9;
+    background-color: transparent;
+    width: 70%;
+    align-self: center;
+}
+input[type=submit].btn-cancel:hover {
+    border-color: #aaeae8;
+    color: #aaeae8;
+}
+input[type=submit].btn-submit {
+    background-color: #29bda2;
+    color: #fff;
+    width: 70%;
+    border: none;
+    padding: 2%;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+input[type=submit].btn-submit:hover {
+    background-color: rgb(23, 81, 90);
+    border: none;
+}
+/*file text*/
+input[type=file] {
+    border: 2px solid #29bda2;
+    border-radius: 5px;
+    padding: 2px;
+}
+input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+input[type=file]::before {
+    content: 'Select Pricture';
+    display: inline-block;
+    background-color: #29bda2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border: 2px solid #29bda2;
+}
+input[type=file]:hover::before {
+    background-color: rgb(23, 81, 90);
+    border: 2px solid rgb(23, 81, 90);
+}
+input[type=file]:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+/*******IMPUTS******/
+input[type=text], input[type=password], textarea {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#form1 {
+    /*margin: 50px 90px;*/
+}
+
+/*modal*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+.modal-box {
+    position: relative;
+    width: 40%;
+    background-color: rgba(43, 130, 141, 0.80);
+    padding: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.modal-box h2{
+    margin: 0 0 10px 0;
+}
+
+#LabelErrMessage{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*********Table**********/
+#form1 .divTable {
+    margin: 60px 90px;
+}
+
+.mytable {
+    margin-top:20px;
+}
+
+.myheader {
+    padding: 5px;
+    font-family: Verdana;
+    font-size: 18px;
+    background-color: #368080;
+    padding:10px;
+    text-align:center;
+}
+
+.myitem {
+    font-family: Verdana;
+    font-size: 14px;
+    background-color: rgba(54, 128, 128, 0.20);
+    padding: 20px;
+}
+
+.img{
+    width:250px;
+}
+
+#LabelT, #LabelTotal, #MageName1, #ArtistName1, #SecretaryID1, #SecreName1, #ManID1, #ManNam1 {
+    color: rgba(255, 255, 255, 0.50);
+}
+#LabelCU{
+    padding-top:10px;
+    text-align: center;
+}
+/*********Magician Page*******/
+.loginInfo {
+    margin: 60px 90px;
+    display: grid;
+}
+.divTableTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.divTableTitle h2 {
+    margin: 0;
+}
+.div-upload {
+    display: flex;
+    margin: 10px 0 20px 0;
+}
+.div-upload input[type=text]{
+    margin: 0 10px 0 0;
+
+}
+
+/*******Back page*********/
+#formBack {
+    margin: 50px 90px;
+}
+#ButtonBack {
+    margin-top: 10px;
+}
+
+/**********secretary page**********/
+#GridViewMagicians, #GridViewSecretaries, #GridViewManager, #GridViewPorgram, #GridViewActs {
+    width: 100%;
+    margin: 20px 0 50px 0;
+    background-color: rgba(54, 128, 128, 0.20);
+    border: 2px solid rgba(255, 255, 255, 0.59);
+}
+    #GridViewMagicians tr:first-child, #GridViewSecretaries tr:first-child, #GridViewManager tr:first-child, #GridViewPorgram tr:first-child, #GridViewActs tr:first-child {
+        background-color: rgb(36, 73, 70);
+    }
+
+    #GridViewMagicians th, #GridViewSecretaries th, #GridViewManager th, #GridViewPorgram th, #GridViewActs  th{
+        padding: 10px;
+    }
+
+    #GridViewMagicians td, #GridViewSecretaries td, #GridViewManager td, #GridViewPorgram td, #GridViewActs td {
+        padding: 5px;
+        text-align: center;
+    }
+    #GridViewMagicians input[type=button], #GridViewSecretaries input[type=button], #GridViewManager input[type=button], #GridViewPorgram input[type=button], #GridViewActs input[type=button] {
+        padding: 2px 20px;
+        margin: 5px;
+    }
+
+/**********secretary modal**********/
+input[type=submit].btn-middle{
+    width: 100%;
+    margin: 5px 0;
+}
+
+.personDiv{
+    display: flex;
+    margin:0;
+}
+.personDiv p {
+    margin: 0 0 0 10px;
+}
+.personDiv h3 {
+    font-size: 16px;
+    margin: 0 0 10px 10px;
+}
+
